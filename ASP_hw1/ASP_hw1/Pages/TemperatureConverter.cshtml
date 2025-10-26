@@ -1,0 +1,13 @@
+﻿@page
+@model ASP_hw1.Pages.TemperatureConverterModel
+@{
+}
+<form method="post">
+    <input name="Celsius" type="number" value="@Model.Celsius" placeholder="Celsius: " />
+    <button type="submit">Submit</button>
+
+</form>
+@if (!string.IsNullOrEmpty(Model.Message))
+{
+    <p>@Model.Message</p>
+}

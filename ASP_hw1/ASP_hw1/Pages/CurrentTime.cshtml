@@ -1,0 +1,8 @@
+﻿@page
+@model ASP_hw1.Pages.CurrentTimeModel
+@{
+}
+@if (!string.IsNullOrEmpty(Model.CurrentTime))
+{
+    <p>Сьогодні: @Model.CurrentTime</p>
+}

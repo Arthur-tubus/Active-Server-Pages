@@ -1,0 +1,15 @@
+﻿@page
+@model ASP_hw1.Pages.ContactModel
+@{
+}
+<form method="post">
+    <input name="UserName" value="@Model.UserName" placeholder="Name: " />
+    <input name="UserEmail" value="@Model.UserEmail" placeholder="Email: " />
+    <input name="Message" value="@Model.Message" placeholder="Message: " />
+
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<p>@Model.Result</p>
