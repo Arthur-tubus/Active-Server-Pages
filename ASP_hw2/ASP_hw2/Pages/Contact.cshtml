@@ -1,0 +1,12 @@
+﻿@page
+@model ASP_hw2.Pages.ContactModel
+@{
+}
+<form method="post">
+    <input type="text" asp-for="Name" />
+    <button type="submit">Submit</button>
+</form>
+@if (string.IsNullOrEmpty(Model.Greeting))
+{
+    <p>@Model.Greeting</p>
+}
